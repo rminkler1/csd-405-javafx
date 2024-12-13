@@ -1,4 +1,4 @@
-package com.robertminkler.mediatest;
+package com.robertminkler.csd405javafx.csd405javafx;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
