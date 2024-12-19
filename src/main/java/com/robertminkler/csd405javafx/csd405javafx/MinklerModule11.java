@@ -26,8 +26,9 @@ public class MinklerModule11 extends Application {
 
     // set padding size
     private static final int GAP = 30;
-    private static final String RANDOM_CHK_LABEL_1 = "Fill With a Random Color";
-    private static final String RANDOM_CHK_LABEL_2 = "Don't even think about it.";
+    private static final String RANDOM_CHK_LABEL_1 = "Fill With a Random Color.";
+    private static final String RANDOM_CHK_LABEL_2 = "Don't even think about it!";
+    public static final String TITLE = "Robert Minkler Module 11 Assignment";
 
     public static void main(String[] args) {
         launch(args);
@@ -39,13 +40,15 @@ public class MinklerModule11 extends Application {
         // Window Layout using BorderPane
         BorderPane borderPane = new BorderPane();
         // set BG color
-        borderPane.setBackground(new Background(
-                new BackgroundFill(
-                        Color.BLACK,
-                        null,
-                        null
+        borderPane.setBackground(
+                new Background(
+                        new BackgroundFill(
+                                Color.BLACK,
+                                null,
+                                null
+                        )
                 )
-        ));
+        );
 
         // Create StackPane and place it in the window
         ShapePane shapePane = new ShapePane();
@@ -114,7 +117,7 @@ public class MinklerModule11 extends Application {
 
         // Set the scene, stage, and show it.
         Scene scene = new Scene(borderPane, 800, 500);
-        primaryStage.setTitle("Robert Minkler Module 11 Assignment");
+        primaryStage.setTitle(TITLE);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
